@@ -7,7 +7,6 @@ namespace Sandbox
 {
     class Program
     {
-        // Test Change
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
