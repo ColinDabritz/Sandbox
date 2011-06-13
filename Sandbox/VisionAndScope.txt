@@ -1,0 +1,50 @@
+﻿Stakeholders:
+D&D Players
+D&D GMs
+D&D Game Designers
+Developers
+
+Vision:
+
+D&D "Combat takes too long"
+"An electronic character sheet"
+
+Helping D&D players enjoy playing D&D sessions by automating the character sheet and the more complex formulas to enable more fluid and responsive gameplay.
+
+(Note: GM may use this for NPCs and Opponents, but we are only supporting character like abilities, not general monster support)
+
+Scope:
+Entering Character Stat Information (NOT creating or rolling characters)
+Loading/Saving of Characters to Disk (not networked/cloud etc)
+Equiped Items Manager (No inventory manager)
+Class bonus information
+Player Chosen Temporary Statuses (e.g. Power Attack)
+PvE Temporary Statuses (e.g. Flat Footed)
+Tracking of character statuses (e.g. HP, ToHit, AC, Damage )
+Melee and Ranged Combat Support (NOT Magic yet)
+Not networked (yet)
+No dice yet (but an eye toward adding them later)
+
+Tracked modifiers will default reasonably and automatically, but be overrideable by the player
+
+Character Has:
+HP
+Attack
+Damage
+Armor Class
+
+Using the above we will calculate:
+Current Attack Bonus (per attack)
+Current AC
+Current HP total
+Current Damage (per attack)
+
+For these values 
+We will give final numbers for the above
+
+Maybe Later:
+More of a DM tool
+Networked?
+Further automation
+Full formulas, citations
+Dice rolling
