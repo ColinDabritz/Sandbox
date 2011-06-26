@@ -9,45 +9,18 @@ namespace Sandbox
     class Program
     {
         static void Main(string[] args)
-        {
-            // test example of using the Modifiers
-            // Note this is a bit hackish, and should probably be reworked
-            Modifier ArmorClass = new Modifier()
-            {
-                Name = "Misc",
-                Base = 1,
-                innerModifier = new Modifier()
-                {
-                    Name = "Dex",
-                    Base = 5,
-                    innerModifier = new ConstrainingModifier()
-                    {
-                        Name = "Shield",
-                        Base = 5,
-                        OverrideName = "Dex",
-                        MaxOverrideValue = 2,
-                        innerModifier = new Modifier()
-                        {
-                            Name = "Magic Armor",
-                            Base = 4,
-                            innerModifier = new ConstrainingModifier()
-                            {
-                                Name = "Armor",
-                                Base = 8,
-                                OverrideName = "Dex",
-                                MaxOverrideValue = 3,
-                                innerModifier = new Modifier()
-                                {
-                                    Name = "AC",
-                                    Base = 10
-                                }
-                            }
-                        }
-                    }
-                }
-            };
+        {  
+            Node<int> root = new Node<int>(4);
+            root.TreeAdd(new Node<int>(2));
+            root.TreeAdd(new Node<int>(5));
+            root.TreeAdd(new Node<int>(1));
+            root.TreeAdd(new Node<int>(3));
 
-            Console.WriteLine(ArmorClass.Value);
+            root.PrintTree();
+
+            root.ChangeMode(Node<int>.DatastructureMode.List).PrintList();
+
+            Console.WriteLine();
 
         }
     }
